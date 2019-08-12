@@ -1,0 +1,11 @@
+{
+  "name": "brain-games",
+  "version": "0.0.1",
+  "description": "project level 1 by Hexlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mr_chepel",
+  "license": "ISC"
+}

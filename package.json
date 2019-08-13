@@ -1,5 +1,5 @@
 {
-  "name": "brain-games",
+  "name": "chepel-brain-games",
   "version": "0.0.1",
   "description": "project level 1 by Hexlet",
   "main": "index.js",
@@ -28,6 +28,7 @@
     "dist"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   }
 }

@@ -4,5 +4,6 @@
 
 ## Installation
 ```sh
-$ npm install chepel_brain_games
+$ sudo npm install -g chepel-brain-games
 ```
+[![asciicast](https://asciinema.org/a/ShiXWV5rmR1G2H2ALnAYiFbbL.svg)](https://asciinema.org/a/ShiXWV5rmR1G2H2ALnAYiFbbL)

@@ -1,0 +1,2 @@
+<a href="https://codeclimate.com/github/mrchepel/backend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/acc208bf568a116d4b2b/maintainability" /></a>
+<a href="https://codeclimate.com/github/mrchepel/backend-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/acc208bf568a116d4b2b/test_coverage" /></a>

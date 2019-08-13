@@ -4,7 +4,8 @@
   "description": "project level 1 by Hexlet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
   "author": "mr_chepel",
   "license": "ISC",
@@ -13,5 +14,11 @@
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
   }
 }

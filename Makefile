@@ -4,7 +4,7 @@ install:
 publish:
 			publish --dry-run
 
-lint:
+make lint:
 			npx eslint .
 
 start:

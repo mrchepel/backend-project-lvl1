@@ -17,7 +17,8 @@ console.log('Answer "yes" if number even otherwise answer "no".\n');
 const name = askName();
 console.log(`Hello, ${name}!\n`);
 
-const question = (winner = false) => {
+const question = () => {
+  let winner = false;
   for (let roundCount = 0; roundCount < 3; roundCount += 1) {
     const random = Math.floor(Math.random() * 100);
     console.log(`Question: ${random}`);
@@ -27,14 +28,14 @@ const question = (winner = false) => {
       winner = true;
     } else {
       console.log('"yes" is wrong answer ;(. Correct answer was "no".');
-      console.log(`Let\'s try again, ${name}!`);
+      console.log(`Let's try again, ${name}!`);
       winner = false;
       break;
     }
   }
   if (winner) {
-      console.log(`Congratulations, ${name}!`);
-    }
+    console.log(`Congratulations, ${name}!`);
+  }
 };
 
 

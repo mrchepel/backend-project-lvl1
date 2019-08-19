@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
 
-const getQuestion = task => car(task);
-const getTrueAnswer = task => cdr(task);
+const getQuestion = (task) => car(task);
+const getTrueAnswer = (task) => cdr(task);
 
 const game = (rules, createTask) => {
   console.log('Welcome to the Brain Games!');

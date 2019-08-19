@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { askName, welcome } from '..';
+// import { askName, welcome } from '..';
 
-console.log(welcome);
-console.log(`Hello, ${askName()}!`);
+// console.log(welcome);
+// console.log(`Hello, ${askName()}!`);

@@ -22,6 +22,7 @@
     "travis": "^0.1.1"
   },
   "dependencies": {
+    "@hexlet/pairs": "^1.0.10",
     "readline-sync": "^1.4.10"
   },
   "files": [
@@ -29,6 +30,7 @@
   ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   }
 }

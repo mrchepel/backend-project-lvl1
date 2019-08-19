@@ -2,6 +2,7 @@ install:
 			npm install
 
 publish:
+			rm -rf dist
 			npm publish --dry-run
 
 lint:
@@ -10,5 +11,8 @@ lint:
 start:
 			npx babel-node src/bin/brain-games.js
 
-even:
+brain-even:
 			npx babel-node src/bin/brain-even.js
+
+# brain-calc:
+# 			npx babel-node src/bin/brain-calc.js

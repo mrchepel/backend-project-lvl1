@@ -1,6 +1,6 @@
 {
   "name": "chepel-brain-games",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "project level 1 by Hexlet",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,12 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "brain",
+    "games",
+    "brain-games",
+    "hexlet"
   ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

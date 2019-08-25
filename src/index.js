@@ -21,6 +21,7 @@ const makeGame = (descriptionGame, createTask) => {
     } else {
       console.log(`\n"${userAnswer}" is wrong answer. Correct answer was "${trueAnswer}"`);
       console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
   return console.log(`Congratulations, ${userName}!`);

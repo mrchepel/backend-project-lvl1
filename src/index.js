@@ -10,6 +10,7 @@ const makeGame = (descriptionGame, createTask) => {
   console.log(`${descriptionGame}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hi, ${userName}!\n `);
+  let win = false;
   for (let i = 0; i < roundsCount; i += 1) {
     const task = createTask();
     const question = getQuestion(task);
@@ -18,13 +19,18 @@ const makeGame = (descriptionGame, createTask) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === trueAnswer) {
       console.log('Correct!');
+      win = true;
     } else {
+      win = false;
       console.log(`\n"${userAnswer}" is wrong answer. Correct answer was "${trueAnswer}"`);
-      console.log(`Let's try again, ${userName}!`);
-      return false;
+      break;
     }
   }
-  return console.log(`Congratulations, ${userName}!`);
+  if (win) {
+    return console.log(`Congratulations, ${userName}!`);
+  } else {
+  console.log(`Let's try again, ${userName}!`);
+  }
 };
 
 export default makeGame;

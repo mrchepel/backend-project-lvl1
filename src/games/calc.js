@@ -1,33 +1,30 @@
-import { cons, car, cdr } from '@hexlet/pairs';
+import { cons } from '@hexlet/pairs';
 import getRandomNumber from '../getRandomNumber';
 import makeGame from '..';
 
-const getOperator = (expression) => car(expression);
-const getResult = (expression) => cdr(expression);
-const listOperators = '+-*';
+const operators = '+-*';
 const descriptionGame = 'What is the result of the expression?';
 
-const getCalculation = (x, y, operator) => {
+const calculate = (x, y, operator) => {
   switch (operator) {
     case '+':
-      return cons('+', x + y);
+      return x + y;
     case '-':
-      return cons('-', x - y);
+      return x - y;
     case '*':
-      return cons('*', x * y);
+      return x * y;
     default:
       return null;
   }
 };
 
-const checkResultExpression = () => {
+const generateExpression = () => {
   const x = getRandomNumber(1, 100);
   const y = getRandomNumber(1, 100);
-  const operator = listOperators[getRandomNumber(0, listOperators.length - 1)];
-  const expression = getCalculation(x, y, operator);
-  const question = `${x} ${getOperator(expression)} ${y}`;
-  const answer = getResult(expression);
-  return cons(question, answer);
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
+  const answer = calculate(x, y, operator);
+  const question = `${x} ${operator} ${y}`;
+  return cons(question, String(answer));
 };
 
-export default () => makeGame(descriptionGame, checkResultExpression);
+export default () => makeGame(descriptionGame, generateExpression);

@@ -17,9 +17,9 @@ const isPrime = (n) => {
 };
 
 const getQuestionAnswer = () => {
-  const questionRound = getRandomNumber(1, 100);
-  const answer = isPrime(questionRound) ? 'yes' : 'no';
-  return cons(questionRound, answer);
+  const question = getRandomNumber(1, 100);
+  const answer = isPrime(question) ? 'yes' : 'no';
+  return cons(question, answer);
 };
 
 export default () => makeGame(descriptionGame, getQuestionAnswer);

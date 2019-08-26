@@ -28,9 +28,9 @@ const makeGame = (descriptionGame, createTask) => {
   }
   if (win) {
     return console.log(`Congratulations, ${userName}!`);
-  } else {
-  console.log(`Let's try again, ${userName}!`);
   }
+  console.log(`Let's try again, ${userName}!`);
+  return win;
 };
 
 export default makeGame;

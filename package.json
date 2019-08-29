@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "@hexlet/pairs": "^1.0.10",
-    "eslint-utils": "^1.4.2",
     "readline-sync": "^1.4.10"
   },
   "files": [

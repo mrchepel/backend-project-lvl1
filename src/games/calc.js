@@ -3,7 +3,7 @@ import getRandomNumber from '../getRandomNumber';
 import makeGame from '..';
 
 const operators = '+-*';
-const descriptionGame = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
 
 const calculate = (x, y, operator) => {
   switch (operator) {
@@ -18,7 +18,7 @@ const calculate = (x, y, operator) => {
   }
 };
 
-const generateExpression = () => {
+const generateData = () => {
   const x = getRandomNumber(1, 100);
   const y = getRandomNumber(1, 100);
   const operator = operators[getRandomNumber(0, operators.length - 1)];
@@ -27,4 +27,4 @@ const generateExpression = () => {
   return cons(question, String(answer));
 };
 
-export default () => makeGame(descriptionGame, generateExpression);
+export default () => makeGame(gameDescription, generateData);
